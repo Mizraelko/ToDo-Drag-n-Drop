@@ -1,0 +1,56 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: #222222;
+}
+input {
+  
+  height: 30px;
+  width: 250px;
+  border: none;
+  border-bottom: 1px solid wheat;
+  background: none;
+  color: white;
+  padding: 0 10px;
+  outline: none;
+  transition: border-bottom .7s ease-in;
+
+}
+.addToDo {
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  background: none;
+  border: 1px solid wheat;
+  color: wheat;
+  margin-left: 10px;
+  transition: all .6s ease;
+}
+.addToDo:hover {
+  cursor: pointer;
+  color:#222222;
+  background: white;
+}
+.todo__item {
+  position: absolute;
+  cursor: move;
+  min-width: 215px;
+  color: black;
+  padding: 1em;
+  border-radius: 5px;
+}
+.delete {
+  position: absolute;
+  transition: all .6s ease;
+  right: 5px;
+  top: 5px;
+  border: none;
+}
+.delete:hover {
+  color: rgb(226, 68, 68);
+  cursor: pointer;
+  transform: scale(1.1);
+}
